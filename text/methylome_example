@@ -1,0 +1,8 @@
+Prior to the analysis, we will filter out the CpG probes which could potentially produce spurious results, such as probes containing common SNPs and/or displaying a missing value in more than three samples. 
+A CpG site will be considered “differentially methylated” (DM) if it showed an absolute value of difference between the beta values in SZGABA vs. (SZWOGABA and/or NC) above 0.1 [|delta(beta)|>0.1] and FDR below 5%. 
+We will compare CRE methylation in the SOX6-related genes among SZGABA, SZWOGABA, and NC specimens with Kruskal-Wallis (KW) test, given that the methylation profile (beta) is likely to follow a non-Gaussian distribution.
+ Prior KW test, we will adjust beta values for potential confounders (e.g. age, gender and experiment batch) using RLM. 
+Dr Kao conducted power estimation (assuming that ~45% of SZ individuals in our cohort are SZGABA)34 through simulation for a wide range of a levels, and found that we will have excellent power to detect DM (Fig. 14).  
+For example, we will have 95% power to detect DM of 0.1 at a =1e-5, which translates to testing 1,000 independent CREs (with conservative Bonferroni correction to nominal p value=0.01).
+
+Figure. Methylation data vs Power, categorized by alpha level.

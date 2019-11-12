@@ -1,0 +1,31 @@
+patient experiments (on testing methylomes of Circulating tumor cells). 
+They want to know the number of patient samples needed to generate enough power in the case of differentiating CTC samples collected at 3-4 time points during therapy for patients. 
+They are thinking about having 20 patients.
+
+The purpose 'differentiating CTC samples collected at 3-4 time points' is addressed by finding genomic site or loci with gradually increased/decreased methylation levels over time points.
+The score can also be the sum/average score over the genome of a patient.
+
+The design is Longitudinal Research; could use repeated measures by ANOVA. 
+    The score is not normally distributed. Try a non-prarmatric version. 
+    KW test needs independence thus not working
+    Repeated measures ANOVA
+    Non-parametric version of Repeated measures ANOVA
+    Multilevel models (MLM) includes mixture models and random effect models
+    Simulation
+To accont for correlations in methylation level of the same patient over the time points.
+power methods developed for multivariate models provide the best available power analysis
+The methylation value is non-Gaussian, such as bimodal distribution
+Adjusting potential confounding variables
+Effective size is a key parameter. First try 0.1 and the values that can get 20 samples.
+Draw a figure for multiple effective size
+
+#####
+I am following the example sent by Javier, assuming that the sample size is fixed at 20. 
+We calculate the power for detecting differentially methylated sites between different time points. 
+The ability to detect differentially methylated sites is the way to address their general requirement to "differentiating CTC samples collected at 3-4 time points".
+
+For the best of my knowledge, there is no easy way to compute the power in this experiments. Please be aware that I made a few strong assumptions to get good powers given 20 patients. Some of the strong assumptions are excluded from the draft.
+
+Below is the draft.  
+Given 20 patients, we compute the power of identifiing differentially methylated sites in at least one time points.
+Considering that the methylation score is not Gaussian distributed, we use Fri xx.

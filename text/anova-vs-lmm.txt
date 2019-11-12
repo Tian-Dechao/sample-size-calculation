@@ -1,0 +1,10 @@
+Our setting is repeated measures 
+linear mixed-effect model.
+controling within-subject random effect.
+Frideman test (repeated measure ANOVA) and linear mixed-effect model are expected to ahieve similar results in our experimental setting (one group, 4 repeated measures).
+Indeed, we found that 20 patients achieve similar power using linear mixed-effect model with randon intercept for patients.
+Linear mixed-effect model is more powerful than repeated measure ANOVA (Frideman) but we expect the difference to be small. 
+Indeed, we found 
+20 patients achieve higher power 
+
+

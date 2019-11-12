@@ -1,0 +1,20 @@
+We will use the output from ChromHMM to identify regions with
+differential chromatin states. Although the 11 histone marks together
+with CTCF ChIP-seq data will give us as many as 25 different states
+from ChromHMM 97, we propose to focus on seven different states,
+including strong enhancer, weak enhancer, active promoter, weak/poised
+promoter, insulator, transcribed regions, and other regions.
+Chi-square test can be used to calculate sample size and perform power
+analysis. However, there is limited literature on relevant studies
+regarding effect size on chromatin state variation. Here we are
+interested in the genomic loci with clear change in chromatin states.
+We therefore expect that the effect size to be large and set to 0.8.
+We set significant level alpha to 0.05 and power to 0.95. The degree
+of freedom is 6. As a result, 34 samples in total and 17 samples in
+each group are sufficient. The sample size is also sufficient for
+multiple comparisons. For instance, when there are 100 loci with
+effect size 0.8, the power is 61.1% with conservative Bonferroni
+correction. The power is 39.6% when there are 1000 such loci. As
+listed in the sample plan, we will be able to secure 30 pairs of
+schizophrenia/control postmortem brain samples and have more than
+enough samples for testing.

@@ -1,0 +1,7 @@
+# absolute working directory
+dir=/hive/dechaot
+dirCode=$dir/results/sample_size/code
+dirRes=$dir/results/sample_size/results
+# absolute path of Rscript
+rscript=/usr0/home/dechaot/usr/local/anaconda2/bin/Rscript
+
